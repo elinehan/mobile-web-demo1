@@ -1,17 +1,60 @@
+<!--
+	1.px.em.rem
+	2.img
+	3.@media
+	4.form input
+-->
 <!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui,target-densitydpi=high-dpi" />
 		<meta name="apple-mobile-web-app-capable" content="yes"/>
-		<meta name="apple-mobile-web-app-status-bar-style" content="balck"/>
+		<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
 		<meta name="apple-touch-fullscreen" content=""/>
 		<meta name="format-detection" content="telephone=no,email=no"/>
-		<meta name="HandheldFriendly" content="yes"/>
+		<meta name="HandheldFriendly" content="true"/>
 		<title></title>
-		<link rel="stylesheet" type="text/css" href="" media="screen"/>
-		<link rel="stylesheet" type="text/css" href="" media="max-device-width:600px"/>
+		<link rel="stylesheet" type="text/css" href="" media="only screen and (min-width:320px) and (max-width:480px)"/>
+		<!--
+			orientation:portrait | landscape
+			device-width 设备屏幕的宽度
+			aspect-ratio 基于视口的宽高比例
+			device-aspect-ratio 基于设备屏幕的宽高比
+			device-pixel-ratio
+			resolution 检测屏幕或打印机的分辨率，如min-resolution：300dpi
+		-->
+		<style type="text/css">
+			/*
+			 
+			 * -webkit-tap-highlight-color、-webkit-box-reflect、-webkit-box\-webkit-box-flex
+			 * -webkit-text-size-adjust:none;-webkit-box-sizing\-webkit-touch-callout
+			 * */
+		</style>
 	</head>
 	<body>
+		<form action="" method="post">
+			<fieldset id="">
+				<legend>表单控件</legend>
+				<input type="email" name="" id="" multiple="true" required autocomplete="on" autofocus placeholder="" pattern=""/>
+			<!--
+				url
+				number  min\max\step
+				range  min\max\step
+				date month week time datetime datetime-local
+				search
+				
+				datalist
+			-->
+				<input type="submit" value=""/>
+			</fieldset>
+		</form>
+		<script type="text/javascript">
+			/*
+			 
+			 * click.touch
+			 * event.changedTouches
+			 * */
+		</script>
 	</body>
 </html>
